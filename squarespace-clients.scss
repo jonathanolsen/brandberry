@@ -1,0 +1,243 @@
+// Breakpoints
+@mixin bp($point) {
+    @if $point == xs {
+        @content;
+    }
+    @else if $point == xs-sm {
+        @media (max-width: 767px)  { @content ; }
+    }
+    @else if $point == xs-md {
+        @media (max-width: 991px)  { @content ; }
+    }
+    @else if $point == xs-lg {
+        @media (max-width: 1199px)  { @content ; }
+    }
+    @else if $point == sm {
+        @media (min-width: 768px) { @content ; }
+    }
+    @else if $point == sm-md {
+        @media (min-width: 768px) and (max-width: 991px)  { @content ; }
+    }
+    @else if $point == sm-lg {
+        @media (min-width: 768px) and (max-width: 1199px)  { @content ; }
+    }
+    @else if $point == md {
+        @media (min-width: 992px) { @content ; }
+    }
+    @else if $point == md-lg {
+        @media (min-width: 992px) and (max-width: 1199px)  { @content ; }
+    }
+    @else if $point == lg {
+        @media (min-width: 1200px) { @content ; }
+    }
+    @else if $point == xl {
+        @media (min-width: 1400px) { @content ; }
+    }
+    @else if $point == xxl {
+        @media (min-width: 1600px) { @content ; }
+    }
+}
+
+@mixin animate($animation) {
+    -webkit-animation:          $animation;
+    -moz-animation:             $animation;
+    -o-animation:               $animation;
+    animation:                  $animation;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform:          translateY(-20px);
+    -ms-transform:              translateY(-20px);
+    transform:                  translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform:          translateY(0);
+    -ms-transform:              translateY(0);
+    transform:                  translateY(0);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name:       fadeInDown;
+  animation-name:               fadeInDown;
+}
+
+@mixin animation-delay($delay) {
+    -webkit-animatoin-delay:    $delay;
+    -moz-animatoin-delay:       $delay;
+    -o-animatoin-delay:         $delay;
+    animatoin-delay:            $delay;
+}
+
+@mixin transform($transition) {
+    -webkit-transition:         $transition;
+    -moz-transition:            $transition;
+    transition:                 $transition;
+}
+
+@mixin shadow($shadow) {
+    -webkit-box-shadow:         $shadow;
+    -moz-box-shadow:            $shadow;
+    -o-box-shadow:              $shadow;
+    box-shadow:                 $shadow;
+}
+
+
+
+.clients {
+
+    .item {
+        min-height: 300px;
+        background: #fff;
+        float: left;
+        width: 100%;
+        @include animate(fadeInDown .3s ease-out backwards);
+        @include shadow(0 0 1px darken($gray, 10%));
+
+        &:hover {
+
+            .logo {
+                -webkit-filter: grayscale(0%);
+            }
+        }
+
+        &:nth-child(1) { @include animation-delay(0.6s) }
+        &:nth-child(2) { @include animation-delay(0.9s) }
+        &:nth-child(3) { @include animation-delay(1.2s) }
+        &:nth-child(4) { @include animation-delay(1.5s) }
+        &:nth-child(5) { @include animation-delay(1.8s) }
+        &:nth-child(6) { @include animation-delay(2.1s) }
+        &:nth-child(7) { @include animation-delay(2.4s) }
+        &:nth-child(8) { @include animation-delay(2.7s) }
+        &:nth-child(9) { @include animation-delay(3s) }
+        &:nth-child(10) { @include animation-delay(3.3s) }
+        &:nth-child(11) { @include animation-delay(3.6s) }
+        &:nth-child(12) { @include animation-delay(3.9s) }
+        &:nth-child(13) { @include animation-delay(4.2s) }
+        &:nth-child(14) { @include animation-delay(4.5s) }
+        &:nth-child(15) { @include animation-delay(4.8s) }
+        &:nth-child(16) { @include animation-delay(5.1s) }
+        &:nth-child(17) { @include animation-delay(5.4s) }
+        &:nth-child(18) { @include animation-delay(5.7s) }
+        &:nth-child(19) { @include animation-delay(6s) }
+        &:nth-child(20) { @include animation-delay(6.3s) }
+    }
+
+    @include bp(md) {
+        .item {
+            width: 50%;
+        }
+    }
+
+    @include bp(lg) {
+        .item {
+            width: 33.33333%;
+        }
+    }
+
+    @include bp(xl) {
+        .item {
+            width: 25%;
+        }
+    }
+
+    @include bp(xxl){
+        .item {
+            width: 20%;
+        }
+    }
+
+    .logo {
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+        height: 300px;
+        float: left;
+        -webkit-filter: grayscale(100%);
+        @include transform(scale(0.8));
+
+        &.stimorol {
+            background-image: url('https://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/564b9388e4b06caaaa8cce40/1447793549927/');
+        }
+
+        &.banani {
+            background-image: url('https://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/564b9298e4b0e573be941172/1447793306206/');
+        }
+
+        &.fishermans {
+            background-image: url('https://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/564b9300e4b01ad97de894da/1447793409000/');
+        }
+
+        &.hm {
+            background-image: url('https://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/564b933ee4b08059fa26e936/1447793471698/');
+        }
+
+        &.hp {
+            background-image: url('https://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/564b93bfe4b049f67297f280/1447793600199/');
+        }
+
+        &.idg {
+            background-image: url('https://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/564b93e6e4b0a240098f31f1/1447793640263/');
+        }
+
+        &.magine {
+            background-image: url('https://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/564b9426e4b0459b2b81ef6f/1447793704669/');
+        }
+
+        &.nackademin {
+            background-image: url('https://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/564b943ae4b0459b2b81f07c/1447793722903/');
+        }
+
+        &.oboy {
+            background-image: url('https://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/564b946ee4b0a01007d2c4ba/1447793774787/');
+        }
+
+        &.qpad {
+            background-image: url('https://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/564b948ce4b0db833ebd6dd8/1447793804746/');
+        }
+
+        &.rebtel {
+            background-image: url('https://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/564b94c0e4b0db833ebd7079/1447793856557/');
+        }
+
+        &.sandrew {
+            background-image: url('https://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/564b94e2e4b05eb5f402ace7/1447793892450/');
+        }
+
+        &.syoss {
+            background-image: url('https://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/564b9500e4b03bf69760028d/1447793921500/');
+        }
+
+        &.telia {
+            background-image: url('https://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/564b9528e4b0db833ebd75f3/1447793962160/');
+        }
+
+        &.travellink {
+            background-image: url('https://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/564b9553e4b03bf6976006d8/1447794003886/');
+        }
+
+        &.ur {
+            background-image: url('https://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/564b9577e4b00507be325766/1447794039728/');
+        }
+
+        &.wella {
+            background-image: url('https://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/564b95bde4b0bc06bda0042b/1447794110488/');
+        }
+
+        &.n24 {
+            background-image: url('https://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/564b95d1e4b01ad97de8bbae/1447794129594/');
+        }
+
+        &.volvo {
+            background-image: url('https://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/564b95f4e4b01ad97de8bd38/1447794165239/');
+        }
+
+        &.marginalen {
+            background-image: url('https://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/564b964be4b0d94c7bec3dfe/1447794251775/');
+        }
+    }
+}
