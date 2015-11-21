@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'brandberry-font';
-  src: url("http://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/5650c384e4b028016691d937/1448133508037/brandberry-font.eot");
-  src: url("http://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/5650c384e4b028016691d937/1448133508037/brandberry-font.eot?#iefix") format("embedded-opentype"), url("http://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/5650c37ae4b028016691d8fd/1448133498079/brandberry-font.woff") format("woff"), url("http://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/5650c37ce4b028016691d911/1448133500866/brandberry-font.ttf") format("truetype");
+  src: url("../fonts/brandberry-font.eot?-t9kpwf");
+  src: url("../fonts/brandberry-font.eot?#iefix-t9kpwf") format("embedded-opentype"), url("../fonts/brandberry-font.woff?-t9kpwf") format("woff"), url("../fonts/brandberry-font.ttf?-t9kpwf") format("truetype"), url("../fonts/brandberry-font.svg?-t9kpwf#brandberry-font") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -14,6 +14,7 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -36,8 +37,8 @@
 
 @font-face {
   font-family: 'appetiteregular';
-  src: url("http://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/5650c39ee4b028016691da0b/1448133534253/appetite_contrast-webfont.eot");
-  src: url("http://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/5650c39ee4b028016691da0b/1448133534253/appetite_contrast-webfont.eot?#iefix") format("embedded-opentype"), url("http://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/5650c3bbe4b028016691db25/1448133563502/appetite_contrast-webfont.woff2") format("woff2"), url("http://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/5650c3b3e4b028016691dafe/1448133555892/appetite_contrast-webfont.woff") format("woff"), url("http://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/5650c3ace4b028016691daa1/1448133548409/appetite_contrast-webfont.ttf") format("truetype");
+  src: url("../fonts/appetite_contrast-webfont.eot");
+  src: url("../fonts/appetite_contrast-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/appetite_contrast-webfont.woff2") format("woff2"), url("../fonts/appetite_contrast-webfont.woff") format("woff"), url("../fonts/appetite_contrast-webfont.ttf") format("truetype"), url("../fonts/appetite_contrast-webfont.svg#appetiteregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
