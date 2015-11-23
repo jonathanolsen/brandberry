@@ -134,6 +134,15 @@ $baraspara:                     #70B13D;
     background: $baraspara;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+        list-style-type: none;
+    }
+}
+
 // Base
 
 body.light {
@@ -560,6 +569,18 @@ body.light {
         &.marginalen {
             background-image: url('https://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/564b964be4b0d94c7bec3dfe/1447794251775/');
         }
+    }
+}
+
+.services {
+
+    @include bp(md) {
+        width: 1256px;
+        margin-left: -150px;
+    }
+
+    .row {
+        display: flex;
     }
 }
 
