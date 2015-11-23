@@ -393,7 +393,9 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
   display: flex;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+  -webkit-transition: .1s all ease-out;
+  transition: .1s all ease-out; }
   .about-page .team-list .team-member {
     width: 30%;
     float: left;

@@ -627,6 +627,7 @@ body.light {
     .team-list {
         display: flex;
         flex-wrap: wrap;
+        transition: .1s all ease-out;
         
         .team-member {
             width: 30%;
