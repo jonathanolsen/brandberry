@@ -627,7 +627,6 @@ body.light {
     .team-list {
         display: flex;
         flex-wrap: wrap;
-        transition: .1s all ease-out;
         
         .team-member {
             width: 30%;
@@ -636,6 +635,12 @@ body.light {
             box-sizing: border-box;
             background: #f6f7f8;
             margin: 0 1.5% 30px;
+            transition: .1s all ease-out;
+
+            &:hover {
+                background: #fff;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            }
 
             h3, p {
                 text-align: center;
@@ -685,11 +690,6 @@ body.light {
                         }
                     }
                 }
-            }
-
-            &:hover {
-                background: #fff;
-                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
             }
         }
     }
@@ -831,6 +831,7 @@ body.light {
 
         .row {
             display: flex;
+            transition: .1s all ease-out;
 
             &:hover {
                 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
