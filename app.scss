@@ -753,6 +753,10 @@ body.light {
             margin-left: -150px;
         }
 
+        & + headline {
+            margin-top: 40px;
+        }
+
         .row {
             display: flex;
 
