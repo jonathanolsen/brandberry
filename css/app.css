@@ -478,7 +478,7 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
   max-width: 1600px !important;
   background: none;
   margin: 0 auto; }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .about-page .services {
     width: 1256px;
     margin-left: -150px; } }

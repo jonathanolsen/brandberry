@@ -748,7 +748,7 @@ body.light {
 
     .services {
 
-        @include bp(md) {
+        @include bp(lg) {
             width: 1256px;
             margin-left: -150px;
         }
