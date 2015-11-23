@@ -1,3 +1,47 @@
+@font-face {
+  font-family: 'brandberry-font';
+  src: url("http://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/5650c384e4b028016691d937/1448133508037/brandberry-font.eot");
+  src: url("http://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/5650c384e4b028016691d937/1448133508037/brandberry-font.eot?#iefix") format("embedded-opentype"), url("http://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/5650c37ae4b028016691d8fd/1448133498079/brandberry-font.woff") format("woff"), url("http://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/5650c37ce4b028016691d911/1448133500866/brandberry-font.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'brandberry-font';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-development:before {
+  content: "\ea3a";
+}
+
+.icon-strategy:before {
+  content: "\e9ea";
+}
+
+.icon-design:before {
+  content: "\e8f7";
+}
+
+.icon-optimization:before {
+  content: "\e83e";
+}
+
+@font-face {
+  font-family: 'appetiteregular';
+  src: url("http://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/5650c39ee4b028016691da0b/1448133534253/appetite_contrast-webfont.eot");
+  src: url("http://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/5650c39ee4b028016691da0b/1448133534253/appetite_contrast-webfont.eot?#iefix") format("embedded-opentype"), url("http://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/5650c3bbe4b028016691db25/1448133563502/appetite_contrast-webfont.woff2") format("woff2"), url("http://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/5650c3b3e4b028016691dafe/1448133555892/appetite_contrast-webfont.woff") format("woff"), url("http://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/5650c3ace4b028016691daa1/1448133548409/appetite_contrast-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @keyframes fadeInDown {
   0% {
     opacity: 0;
@@ -46,13 +90,8 @@
   background: #70B13D;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-ul li {
-  list-style-type: none;
+.appetite {
+  font-family: 'appetiteregular';
 }
 
 body.light #logoWrapper #logoImage > a {
@@ -557,17 +596,6 @@ body.light.regular-sub-page .banner-thumbnail-wrapper .desc-wrapper p strong {
   background-image: url("https://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/564b964be4b0d94c7bec3dfe/1447794251775/");
 }
 
-@media (min-width: 992px) {
-  .services {
-    width: 1256px;
-    margin-left: -150px;
-  }
-}
-
-.services .row {
-  display: flex;
-}
-
 .about-page .team-list {
   display: flex;
   flex-wrap: wrap;
@@ -579,7 +607,200 @@ body.light.regular-sub-page .banner-thumbnail-wrapper .desc-wrapper p strong {
   padding: 30px;
   box-sizing: border-box;
   background: #f6f7f8;
-  margin: 0 1.5%;
+  margin: 0 1.5% 30px;
+}
+
+.about-page .team-list .team-member h3, .about-page .team-list .team-member p {
+  text-align: center;
+}
+
+.about-page .team-list .team-member h3 span {
+  display: block;
+  font-size: 14px;
+  text-transform: none;
+  color: #999;
+  font-weight: 300;
+  margin-top: 6px;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.about-page .team-list .team-member p {
+  min-height: 100px;
+}
+
+.about-page .team-list .team-member ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.about-page .team-list .team-member ul li {
+  list-style-type: none;
+  float: left;
+}
+
+.about-page .team-list .team-member ul li a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 22px;
+  border-radius: 4px;
+  transition: all 0.1s ease-out;
+}
+
+.about-page .team-list .team-member ul li a:hover {
+  background: #00AAEF;
+  color: #fff;
+}
+
+.about-page .grid-container {
+  width: 100%;
+  max-width: 1140px;
+  background: #fff;
+  margin: -60px auto 0;
+  position: relative;
+  color: #3e3947;
+}
+
+.about-page .headline {
+  background: #fff;
+  padding: 50px 0;
+}
+
+.about-page .headline .container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-page .headline .container > h1 {
+  font-size: 50px;
+  color: #161d20;
+}
+
+.about-page .headline .container > p {
+  font-family: "Droid serif", georgia, serif;
+  font-style: italic;
+  color: #898992;
+}
+
+.about-page .page-services .grid-container {
+  max-width: 1600px !important;
+  background: none;
+  margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  .about-page .services {
+    width: 1256px;
+    margin-left: -150px;
+  }
+}
+
+.about-page .services .row {
+  display: flex;
+}
+
+.about-page .services .row > div {
+  background: #fff;
+  text-align: center;
+  padding: 0;
+  box-shadow: 0 0 1px #9c9ca2;
+  transition: .2s ease-out;
+}
+
+.about-page .services .row > div:hover {
+  background: #e4edef;
+}
+
+.about-page .services .row > div:hover .headline {
+  background: #219BCC;
+}
+
+.about-page .services .row > div:hover .headline i {
+  color: #125671;
+}
+
+.about-page .services .row > div:hover .headline h2 {
+  color: #fff;
+}
+
+.about-page .services .row > div .headline {
+  transition: .2s ease-out;
+}
+
+.about-page .services .row > div .headline > i {
+  font-size: 54px;
+  margin: 20px 0;
+  display: inline-block;
+}
+
+.about-page .services .row > div .headline h2 {
+  font-size: 24px;
+  font-weight: bold;
+  transition: .2s ease-out;
+}
+
+.about-page .services .row > div > ul {
+  text-align: left;
+  border-top: 1px solid #F0F8FA;
+  padding: 20px 30px;
+}
+
+.about-page .services .row > div > ul li {
+  font-family: "Droid serif", georgia, serif;
+  font-style: italic;
+  margin: 14px 0;
+  padding-left: 44px;
+  color: #737f82;
+  position: relative;
+}
+
+.about-page .services .row > div > ul li:before {
+  background: #C1CCD1;
+  width: 22px;
+  height: 2px;
+  position: absolute;
+  top: 9px;
+  left: 0;
+  content: '';
+}
+
+.about-page .approach .row > div {
+  background: #fff;
+  text-align: center;
+  padding: 0;
+  display: flex;
+  align-content: center;
+  box-shadow: 0 0 1px #9c9ca2;
+  transition: .2s ease-out;
+}
+
+.about-page .approach .row > div h3 {
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.about-page .approach .row > div h4.appetite {
+  font-size: 80px;
+  color: #161d20;
+  align-self: center;
+}
+
+.about-page .approach .row > div:first-of-type {
+  justify-content: center;
+}
+
+.about-page .approach .row .content {
+  max-width: 84%;
+  padding: 50px;
+  text-align: left;
 }
 
 .white-box-on-top {
