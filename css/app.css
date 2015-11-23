@@ -535,6 +535,12 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+  .about-page .approach .row:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    -webkit-transform: scale(1.04);
+        -ms-transform: scale(1.04);
+            transform: scale(1.04); }
   .about-page .approach .row > div {
     background: #fff;
     text-align: center;
