@@ -640,6 +640,7 @@ body.light {
             &:hover {
                 background: #fff;
                 box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+                transform: scale(1.04);
             }
 
             h3, p {
@@ -665,7 +666,7 @@ body.light {
             }
 
             ul {
-                margin: 0;
+                margin: 15px 0 0;
                 padding: 0;
                 display: flex;
                 justify-content: center;
@@ -833,11 +834,11 @@ body.light {
             display: flex;
             transition: .1s all ease-out;
 
-            &:hover {
+            /* &:hover {
                 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
                 position: relative;
                 transform: scale(1.04);
-            }
+            } */
 
             > div {
                 background: #fff;
