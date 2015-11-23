@@ -33,6 +33,17 @@
   src: url("http://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/5650c39ee4b028016691da0b/1448133534253/appetite_contrast-webfont.eot?#iefix") format("embedded-opentype"), url("http://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/5650c3bbe4b028016691db25/1448133563502/appetite_contrast-webfont.woff2") format("woff2"), url("http://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/5650c3b3e4b028016691dafe/1448133555892/appetite_contrast-webfont.woff") format("woff"), url("http://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/5650c3ace4b028016691daa1/1448133548409/appetite_contrast-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); } }
 @keyframes fadeInDown {
   0% {
     opacity: 0;
@@ -104,8 +115,14 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
   background: #fff;
   margin-top: -187px;
   border-bottom: 1px solid #E7E7E8;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   height: 90px;
   z-index: 99; }
@@ -113,7 +130,10 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
     text-align: center;
     padding: 20px 0;
     border-right: 1px solid #E7E7E8;
-    flex: 1; }
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
     .project-specifics div > img {
       width: auto;
       max-height: 50px;
@@ -140,9 +160,15 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
 .case-nav {
   width: 100%;
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex; }
   .case-nav .case-link {
-    flex: 1;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     background: #f6f7f8;
     border-radius: 4px;
     padding: 25px 35px;
@@ -150,12 +176,14 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
     margin-right: 10px;
     font-size: 25px;
     font-weight: 700;
+    -webkit-transition: all .1s ease-out;
     transition: all .1s ease-out; }
     .case-nav .case-link > i {
       float: left;
       font-size: 40px;
       margin-right: 30px;
       margin-top: 5px;
+      -webkit-transition: all .1s ease-out;
       transition: all .1s ease-out; }
     .case-nav .case-link > span {
       text-transform: uppercase;
@@ -164,6 +192,7 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
       font-size: 16px;
       font-weight: 300;
       width: 100%;
+      -webkit-transition: all .1s ease-out;
       transition: all .1s ease-out; }
     .case-nav .case-link.prev {
       margin-right: 10px; }
@@ -229,114 +258,70 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
   float: left;
   width: 100%;
   -webkit-animation: fadeInDown 0.3s ease-out backwards;
-  -moz-animation: fadeInDown 0.3s ease-out backwards;
-  -o-animation: fadeInDown 0.3s ease-out backwards;
   animation: fadeInDown 0.3s ease-out backwards;
-  -webkit-box-shadow: 0 0 1px #9c9ca2;
-  -moz-box-shadow: 0 0 1px #9c9ca2;
   -o-box-shadow: 0 0 1px #9c9ca2;
   box-shadow: 0 0 1px #9c9ca2; }
   .clients .item:hover .logo {
     -webkit-filter: grayscale(0%); }
   .clients .item:nth-child(1) {
     -webkit-animation-delay: 0.6s;
-    -moz-animation-delay: 0.6s;
-    -o-animation-delay: 0.6s;
     animation-delay: 0.6s; }
   .clients .item:nth-child(2) {
     -webkit-animation-delay: 0.9s;
-    -moz-animation-delay: 0.9s;
-    -o-animation-delay: 0.9s;
     animation-delay: 0.9s; }
   .clients .item:nth-child(3) {
     -webkit-animation-delay: 1.2s;
-    -moz-animation-delay: 1.2s;
-    -o-animation-delay: 1.2s;
     animation-delay: 1.2s; }
   .clients .item:nth-child(4) {
     -webkit-animation-delay: 1.5s;
-    -moz-animation-delay: 1.5s;
-    -o-animation-delay: 1.5s;
     animation-delay: 1.5s; }
   .clients .item:nth-child(5) {
     -webkit-animation-delay: 1.8s;
-    -moz-animation-delay: 1.8s;
-    -o-animation-delay: 1.8s;
     animation-delay: 1.8s; }
   .clients .item:nth-child(6) {
     -webkit-animation-delay: 2.1s;
-    -moz-animation-delay: 2.1s;
-    -o-animation-delay: 2.1s;
     animation-delay: 2.1s; }
   .clients .item:nth-child(7) {
     -webkit-animation-delay: 2.4s;
-    -moz-animation-delay: 2.4s;
-    -o-animation-delay: 2.4s;
     animation-delay: 2.4s; }
   .clients .item:nth-child(8) {
     -webkit-animation-delay: 2.7s;
-    -moz-animation-delay: 2.7s;
-    -o-animation-delay: 2.7s;
     animation-delay: 2.7s; }
   .clients .item:nth-child(9) {
     -webkit-animation-delay: 3s;
-    -moz-animation-delay: 3s;
-    -o-animation-delay: 3s;
     animation-delay: 3s; }
   .clients .item:nth-child(10) {
     -webkit-animation-delay: 3.3s;
-    -moz-animation-delay: 3.3s;
-    -o-animation-delay: 3.3s;
     animation-delay: 3.3s; }
   .clients .item:nth-child(11) {
     -webkit-animation-delay: 3.6s;
-    -moz-animation-delay: 3.6s;
-    -o-animation-delay: 3.6s;
     animation-delay: 3.6s; }
   .clients .item:nth-child(12) {
     -webkit-animation-delay: 3.9s;
-    -moz-animation-delay: 3.9s;
-    -o-animation-delay: 3.9s;
     animation-delay: 3.9s; }
   .clients .item:nth-child(13) {
     -webkit-animation-delay: 4.2s;
-    -moz-animation-delay: 4.2s;
-    -o-animation-delay: 4.2s;
     animation-delay: 4.2s; }
   .clients .item:nth-child(14) {
     -webkit-animation-delay: 4.5s;
-    -moz-animation-delay: 4.5s;
-    -o-animation-delay: 4.5s;
     animation-delay: 4.5s; }
   .clients .item:nth-child(15) {
     -webkit-animation-delay: 4.8s;
-    -moz-animation-delay: 4.8s;
-    -o-animation-delay: 4.8s;
     animation-delay: 4.8s; }
   .clients .item:nth-child(16) {
     -webkit-animation-delay: 5.1s;
-    -moz-animation-delay: 5.1s;
-    -o-animation-delay: 5.1s;
     animation-delay: 5.1s; }
   .clients .item:nth-child(17) {
     -webkit-animation-delay: 5.4s;
-    -moz-animation-delay: 5.4s;
-    -o-animation-delay: 5.4s;
     animation-delay: 5.4s; }
   .clients .item:nth-child(18) {
     -webkit-animation-delay: 5.7s;
-    -moz-animation-delay: 5.7s;
-    -o-animation-delay: 5.7s;
     animation-delay: 5.7s; }
   .clients .item:nth-child(19) {
     -webkit-animation-delay: 6s;
-    -moz-animation-delay: 6s;
-    -o-animation-delay: 6s;
     animation-delay: 6s; }
   .clients .item:nth-child(20) {
     -webkit-animation-delay: 6.3s;
-    -moz-animation-delay: 6.3s;
-    -o-animation-delay: 6.3s;
     animation-delay: 6.3s; }
 @media (min-width: 992px) {
   .clients .item {
@@ -359,7 +344,6 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
   background-size: 70%;
   -webkit-filter: grayscale(100%);
   -webkit-transition: scale(0.8);
-  -moz-transition: scale(0.8);
   transition: scale(0.8); }
   .clients .logo.stimorol {
     background-image: url("https://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/564b9388e4b06caaaa8cce40/1447793549927/"); }
@@ -403,8 +387,13 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
     background-image: url("https://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/564b964be4b0d94c7bec3dfe/1447794251775/"); }
 
 .about-page .team-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap; }
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
   .about-page .team-list .team-member {
     width: 30%;
     float: left;
@@ -412,11 +401,14 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
     box-sizing: border-box;
     background: #f6f7f8;
     margin: 0 1.5% 30px;
-    transition: .1s all ease-out; }
+    -webkit-transition: .2s all ease-out;
+    transition: .2s all ease-out; }
     .about-page .team-list .team-member:hover {
       background: #fff;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-      transform: scale(1.04); }
+      -webkit-transform: scale(1.04);
+          -ms-transform: scale(1.04);
+              transform: scale(1.04); }
     .about-page .team-list .team-member h3, .about-page .team-list .team-member p {
       text-align: center; }
     .about-page .team-list .team-member h3 span {
@@ -433,8 +425,14 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
     .about-page .team-list .team-member ul {
       margin: 15px 0 0;
       padding: 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: center; }
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
       .about-page .team-list .team-member ul li {
         list-style-type: none;
         float: left; }
@@ -446,6 +444,7 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
           text-align: center;
           font-size: 22px;
           border-radius: 4px;
+          -webkit-transition: all .1s ease-out;
           transition: all .1s ease-out; }
           .about-page .team-list .team-member ul li a:hover {
             background: #00AAEF;
@@ -486,12 +485,16 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
 .about-page .services + headline {
   margin-top: 40px; }
 .about-page .services .row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex; }
   .about-page .services .row > div {
     background: #fff;
     text-align: center;
     padding: 0;
     box-shadow: 0 0 1px #9c9ca2;
+    -webkit-transition: .2s ease-out;
     transition: .2s ease-out; }
     .about-page .services .row > div:hover {
       background: #e4edef; }
@@ -502,6 +505,7 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
         .about-page .services .row > div:hover .headline h2 {
           color: #fff; }
     .about-page .services .row > div .headline {
+      -webkit-transition: .2s ease-out;
       transition: .2s ease-out; }
       .about-page .services .row > div .headline > i {
         font-size: 54px;
@@ -510,6 +514,7 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
       .about-page .services .row > div .headline h2 {
         font-size: 24px;
         font-weight: bold;
+        -webkit-transition: .2s ease-out;
         transition: .2s ease-out; }
     .about-page .services .row > div > ul {
       text-align: left;
@@ -531,7 +536,11 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
           left: 0;
           content: ''; }
 .about-page .approach .row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-transition: .1s all ease-out;
   transition: .1s all ease-out;
   /* &:hover {
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -542,9 +551,15 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
     background: #fff;
     text-align: center;
     padding: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-content: center;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
     box-shadow: 0 0 1px #9c9ca2;
+    -webkit-transition: .2s ease-out;
     transition: .2s ease-out; }
     .about-page .approach .row > div h3 {
       font-size: 22px;
@@ -554,9 +569,14 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
       font-size: 80px;
       line-height: 0;
       color: #161d20;
-      align-self: center; }
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center; }
     .about-page .approach .row > div:first-of-type {
-      justify-content: center; }
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
   .about-page .approach .row .content {
     max-width: 84%;
     padding: 50px;
