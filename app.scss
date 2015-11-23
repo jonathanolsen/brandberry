@@ -685,6 +685,11 @@ body.light {
                     }
                 }
             }
+
+            &:hover {
+                background: #fff;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            }
         }
     }
 
@@ -843,6 +848,7 @@ body.light {
 
                 h4.appetite {
                     font-size: 80px;
+                    line-height: 0;
                     color: $darkgray;
                     align-self: center;
                 }

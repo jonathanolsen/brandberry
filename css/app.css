@@ -441,6 +441,9 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
           .about-page .team-list .team-member ul li a:hover {
             background: #00AAEF;
             color: #fff; }
+    .about-page .team-list .team-member:hover {
+      background: #fff;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); }
 .about-page .grid-container {
   width: 100%;
   max-width: 1140px;
@@ -550,6 +553,7 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
       text-transform: none; }
     .about-page .approach .row > div h4.appetite {
       font-size: 80px;
+      line-height: 0;
       color: #161d20;
       -webkit-align-self: center;
           -ms-flex-item-align: center;
