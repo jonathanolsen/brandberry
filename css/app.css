@@ -412,14 +412,17 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
       height: 100%;
       opacity: 0;
       border-radius: 5px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
       -webkit-transition: opacity .2s ease-in-out;
-      transition: opacity .2s ease-in-out; }
+      transition: opacity .2s ease-in-out;
+      top: 0;
+      left: 0; }
     .about-page .team-list .team-member:hover {
       background: #fff;
       -webkit-transform: scale(1.04);
           -ms-transform: scale(1.04);
-              transform: scale(1.04); }
+              transform: scale(1.04);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); }
       .about-page .team-list .team-member:hover:after {
         opacity: 1; }
     .about-page .team-list .team-member h3, .about-page .team-list .team-member p {
