@@ -610,3 +610,14 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
 
 hr {
   margin: 10px 0; }
+
+.list-style li {
+  position: relative; }
+  .list-style li:before {
+    content: '';
+    height: 2px;
+    background: #E22171;
+    width: 28px;
+    position: absolute;
+    left: 0;
+    top: 8px; }

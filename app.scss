@@ -925,7 +925,22 @@ hr {
 
 
 
+.list-style {
 
+    li {
+        position: relative;
+
+        &:before {
+            content: '';
+            height: 2px;
+            background: $brandberry;
+            width: 28px;
+            position: absolute;
+            left: 0;
+            top: 8px;
+        }
+    }
+}
 
 
 
