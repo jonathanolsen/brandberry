@@ -621,3 +621,13 @@ hr {
     position: absolute;
     left: 0;
     top: 8px; }
+
+.time {
+  background: #eee;
+  padding: 13px 26px;
+  border-radius: 30px; }
+  .time.dark {
+    background: #42434a;
+    color: #fff;
+    padding: 13px 26px;
+    border-radius: 30px; }

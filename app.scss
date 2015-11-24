@@ -944,5 +944,21 @@ hr {
 
 
 
+.time {
+    background: #eee;
+    padding: 13px 26px;
+    border-radius: 30px;
+
+    &.dark {
+        background: #42434a;
+        color: #fff;
+        padding: 13px 26px;
+        border-radius: 30px;
+    }
+}
+
+
+
+
 
 
