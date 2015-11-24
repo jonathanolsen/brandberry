@@ -634,3 +634,17 @@ hr {
     color: #fff;
     padding: 13px 26px;
     border-radius: 30px; }
+
+.table {
+  width: 100%; }
+  .table > div {
+    width: 50%;
+    float: left;
+    padding: 8px 18px;
+    box-sizing: border-box;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.03); }
+  .table .end {
+    background: #f5f6f7;
+    margin-top: 10px;
+    border-radius: 4px;
+    width: 100%; }
