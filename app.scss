@@ -651,6 +651,7 @@ body.light {
                 transition: opacity .2s ease-in-out;
                 top: 0;
                 left: 0;
+                z-index: -1;
             }
 
             &:hover {
