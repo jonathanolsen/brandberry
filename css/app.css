@@ -404,14 +404,15 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
     -webkit-transition: .2s all ease-out;
     transition: .2s all ease-out;
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); }
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border-radius: 3px; }
     .about-page .team-list .team-member:after {
       content: '';
       position: absolute;
       width: 100%;
       height: 100%;
       opacity: 0;
-      border-radius: 5px;
+      border-radius: 3px;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
       -webkit-transition: opacity .2s ease-in-out;
       transition: opacity .2s ease-in-out;
@@ -464,7 +465,7 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
           -webkit-transition: all .1s ease-out;
           transition: all .1s ease-out; }
           .about-page .team-list .team-member ul li a:hover {
-            background: #00AAEF;
+            background: #219BCC;
             color: #fff; }
 .about-page .grid-container {
   width: 100%;
