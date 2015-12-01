@@ -665,12 +665,12 @@ hr {
   .btn:hover {
     background: #219BCC; }
 
-.preFooter .btn {
+.pre-footer-inner .btn {
   background: #219BCC;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
   padding: 16px 27px; }
-  .preFooter .btn:hover {
+  .pre-footer-inner .btn:hover {
     background: #fff;
     color: #333333; }
