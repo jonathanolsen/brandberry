@@ -652,7 +652,7 @@ hr {
 
 .btn {
   padding: 11px 22px;
-  background: #219BCC;
+  background: #d4d4da;
   border-radius: 4px;
   color: #fff;
   text-transform: uppercase;
@@ -660,4 +660,4 @@ hr {
   -webkit-transition: .1s ease-out;
   transition: .1s ease-out; }
   .btn:hover {
-    background: #3E3947; }
+    background: #219BCC; }
