@@ -674,3 +674,6 @@ hr {
   .pre-footer-inner .btn:hover {
     background: #fff;
     color: #333333; }
+
+.contact-page #preFooter {
+  display: none !important; }
