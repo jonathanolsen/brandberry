@@ -468,6 +468,8 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
           .about-page .team-list .team-member ul li a:hover {
             background: #219BCC;
             color: #fff; }
+    .about-page .team-list .team-member .btn {
+      margin-top: 18px; }
 .about-page .grid-container {
   width: 100%;
   max-width: 1140px;
