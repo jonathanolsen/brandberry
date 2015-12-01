@@ -469,7 +469,8 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
             background: #219BCC;
             color: #fff; }
     .about-page .team-list .team-member .btn {
-      margin-top: 18px; }
+      margin-top: 18px;
+      display: inline-block; }
 .about-page .grid-container {
   width: 100%;
   max-width: 1140px;
@@ -653,7 +654,7 @@ hr {
     width: 100%; }
 
 .btn {
-  padding: 11px 22px;
+  padding: 10px 22px;
   background: #d4d4da;
   border-radius: 4px;
   color: #fff;
@@ -663,3 +664,13 @@ hr {
   transition: .1s ease-out; }
   .btn:hover {
     background: #219BCC; }
+
+.preFooter .btn {
+  background: #219BCC;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 16px 27px; }
+  .preFooter .btn:hover {
+    background: #fff;
+    color: #333; }

@@ -718,6 +718,7 @@ body.light {
 
             .btn {
                 margin-top: 18px;
+                display: inline-block;
             }
         }
     }
@@ -981,7 +982,7 @@ hr {
 
 
 .btn {
-    padding: 11px 22px;
+    padding: 10px 22px;
     background: #d4d4da;
     border-radius: 4px;
     color: #fff;
@@ -995,3 +996,17 @@ hr {
 }
 
 
+
+
+.preFooter .btn {
+    background: #219BCC;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 16px 27px;
+
+    &:hover {
+        background: #fff;
+        color: #333;
+    }
+}
