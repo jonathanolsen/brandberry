@@ -146,6 +146,7 @@ $halfdark:                      #5A5A64;
 $gray:                          #B6B6BB;
 $lightgray:                     #f6f7f8;
 
+$normal:                        #a5a8aa;
 $textcolor:                     #898992;
 
 $brandberry:                    #E22171;
@@ -1024,4 +1025,169 @@ hr {
         display: none !important;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.start-page {
+    height: 100%;
+
+    #header {
+        padding: 0 40px;
+    }
+
+    .collection-type-index {
+
+        #page {
+            height: 100%;
+
+            #content {
+                height: 100%;
+            }
+        }
+
+        .page-content {
+            display: none !important;
+        }
+    }
+
+    .index-page {
+        height: 100%;
+
+        #siteWrapper {
+            height: 100%;
+        }
+
+        #content .index-section {
+            height: 100%;
+
+            .banner-thumbnail-wrapper {
+                min-height: 100px;
+                height: 100%;
+                padding: 0;
+
+                .desc-wrapper {
+                    position: absolute;
+                    max-width: none;
+                    left: 0;
+                    text-align: left;
+                    top: 0;
+                    padding: 70px 40px;
+
+                    p > em {
+                        background: #fff;
+                        color: #000;
+                        display: inline-block;
+                        padding: 8px 14px 7px;
+                        font-size: 17px;
+                        border-radius: 2px;
+                        line-height: 20px;
+                        margin-top: 0;
+                    }
+
+                    p {
+                        a {
+                            padding: 0 16px;
+                            height: 40px;
+                            line-height: 38px;
+                            text-transform: uppercase;
+                            color: #fff;
+                            border: 2px solid rgba(255, 255, 255, .67);
+                            color: #fff;
+                            font-weight: 700;
+                            display: inline-block;
+                            position: relative;
+                            transition: all .2s ease-out;
+                            box-sizing: border-box;
+                            border-radius: 2px;
+                            background: none;
+                            margin: 0;
+
+                            &:after {
+                                display: inline-block;
+                                font-family: "Ionicons";
+                                speak: none;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-variant: normal;
+                                text-transform: none;
+                                text-rendering: auto;
+                                line-height: 1;
+                                -webkit-font-smoothing: antialiased;
+                                -moz-osx-font-smoothing: grayscale;
+                                opacity: 0;
+                                position: absolute;
+                                top: 50%;
+                                font-size: 13px;
+                                color: $normal;
+                                right: 14px;
+                                margin-top: -6px;
+                                content: "\f125";
+
+                                transition: all, .2s ease-in-out;
+                            }
+
+                            &:hover {
+                                color: #fff;
+                                padding-right: 30px;
+                                background: #36B3A8;
+                                border-color: #36B3A8;
+
+                                &:after {
+                                    opacity: 1;
+                                    right: 12px;
+                                    color: #000;
+                                }
+                            }
+                        }
+
+                        em {
+                            font-style: normal;
+                            padding: 0 16px;
+                            height: 40px;
+                            line-height: 41px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
 
