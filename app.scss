@@ -255,6 +255,13 @@ body.light {
     }
 }
 
+.index-page {
+
+    #preFooter {
+        display: none !important;
+    }
+}
+
 .project-specifics {
     background: #fff;
     margin-top: -187px;
@@ -1017,3 +1024,4 @@ hr {
         display: none !important;
     }
 }
+

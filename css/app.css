@@ -111,6 +111,9 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
   background: url("http://static1.squarespace.com/static/56478a9ce4b0217374387a06/t/5648eaf7e4b0e7b6bff462f4/1447619319751/k.jpg") top left no-repeat;
   background-size: cover; }
 
+.index-page #preFooter {
+  display: none !important; }
+
 .project-specifics {
   background: #fff;
   margin-top: -187px;
