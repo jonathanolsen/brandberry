@@ -643,7 +643,9 @@ hr {
     border-radius: 30px; }
 
 .table {
-  width: 100%; }
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 30px; }
   .table > div {
     width: 50%;
     float: left;
