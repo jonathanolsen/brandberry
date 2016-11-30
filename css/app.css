@@ -4,6 +4,7 @@
   src: url("../fonts/brandberry/brandberry-font.eot?#iefix") format("embedded-opentype"), url("../fonts/brandberry/brandberry-font.woff") format("woff"), url("../fonts/brandberry/brandberry-font.svg") format("svg"), url("../fonts/brandberry/brandberry-font.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'brandberry-font';
   speak: none;
@@ -33,28 +34,27 @@
   src: url("../fonts/appetite/appetite_contrast-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/appetite/appetite_contrast-webfont.woff2") format("woff2"), url("../fonts/appetite/appetite_contrast-webfont.woff") format("woff"), url("../fonts/appetite/appetite_contrast-webfont.svg") format("svg"), url("../fonts/appetite/appetite_contrast-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+
 @-webkit-keyframes fadeInDown {
   0% {
     opacity: 0;
     -webkit-transform: translateY(-20px);
-    -ms-transform: translateY(-20px);
     transform: translateY(-20px); }
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
     transform: translateY(0); } }
+
 @keyframes fadeInDown {
   0% {
     opacity: 0;
     -webkit-transform: translateY(-20px);
-    -ms-transform: translateY(-20px);
     transform: translateY(-20px); }
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
     transform: translateY(0); } }
+
 .fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown; }
@@ -88,8 +88,10 @@ body.light #logoWrapper #logoImage > a {
   background-size: contain; }
   body.light #logoWrapper #logoImage > a img {
     opacity: 0 !important; }
+
 body.light #mainNavigation a {
   color: #161d20; }
+
 body.light.regular-sub-page .banner-thumbnail-wrapper {
   padding: 80px 0 55px; }
   body.light.regular-sub-page .banner-thumbnail-wrapper .color-overlay {
@@ -119,11 +121,9 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
   margin-top: -187px;
   border-bottom: 1px solid #E7E7E8;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   position: relative;
@@ -134,7 +134,6 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
     padding: 20px 0;
     border-right: 1px solid #E7E7E8;
     -webkit-box-flex: 1;
-    -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1; }
     .project-specifics div > img {
@@ -157,6 +156,7 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
   margin-top: -40px; }
   .case-study .desc-wrapper p:last-of-type {
     display: none; }
+
 .case-study .color-overlay {
   opacity: 0.93; }
 
@@ -164,12 +164,10 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
   width: 100%;
   position: relative;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
   .case-nav .case-link {
     -webkit-box-flex: 1;
-    -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1;
     background: #f6f7f8;
@@ -326,18 +324,23 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
   .clients .item:nth-child(20) {
     -webkit-animation-delay: 6.3s;
     animation-delay: 6.3s; }
+
 @media (min-width: 992px) {
   .clients .item {
     width: 50%; } }
+
 @media (min-width: 1200px) {
   .clients .item {
     width: 33.33333%; } }
+
 @media (min-width: 1400px) {
   .clients .item {
     width: 25%; } }
+
 @media (min-width: 1600px) {
   .clients .item {
     width: 20%; } }
+
 .clients .logo {
   background-repeat: no-repeat;
   background-position: center center;
@@ -391,12 +394,10 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
 
 .about-page .team-list {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
   .about-page .team-list .team-member {
     width: 30%;
     float: left;
@@ -426,7 +427,6 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
     .about-page .team-list .team-member:hover {
       background: #fff;
       -webkit-transform: scale(1.04);
-          -ms-transform: scale(1.04);
               transform: scale(1.04);
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
       .about-page .team-list .team-member:hover:after {
@@ -448,11 +448,9 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
       margin: 15px 0 0;
       padding: 0;
       display: -webkit-box;
-      display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: center;
-      -webkit-justify-content: center;
           -ms-flex-pack: center;
               justify-content: center; }
       .about-page .team-list .team-member ul li {
@@ -474,6 +472,7 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
     .about-page .team-list .team-member .btn {
       margin-top: 18px;
       display: inline-block; }
+
 .about-page .grid-container {
   width: 100%;
   max-width: 1140px;
@@ -481,6 +480,7 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
   margin: -60px auto 0;
   position: relative;
   color: #3e3947; }
+
 .about-page .headline {
   background: #fff;
   padding: 50px 0; }
@@ -499,19 +499,22 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
       font-family: "Droid serif", georgia, serif;
       font-style: italic;
       color: #898992; }
+
 .about-page .page-services .grid-container {
   max-width: 1600px !important;
   background: none;
   margin: 0 auto; }
+
 @media (min-width: 1200px) {
   .about-page .services {
     width: 1256px;
     margin-left: -150px; } }
+
 .about-page .services + headline {
   margin-top: 40px; }
+
 .about-page .services .row {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
   .about-page .services .row > div {
@@ -560,29 +563,27 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
           top: 9px;
           left: 0;
           content: ''; }
+
 .about-page .approach .row {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-transition: .1s all ease-out;
   transition: .1s all ease-out;
   /* &:hover {
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-      position: relative;
-      transform: scale(1.04);
-  } */ }
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+                position: relative;
+                transform: scale(1.04);
+            } */ }
   .about-page .approach .row > div {
     background: #fff;
     text-align: center;
     padding: 0;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-align-content: center;
-        -ms-flex-line-pack: center;
-            align-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     box-shadow: 0 0 1px #9c9ca2;
     -webkit-transition: .2s ease-out;
     transition: .2s ease-out; }
@@ -594,12 +595,11 @@ body.light.regular-sub-page .banner-thumbnail-wrapper {
       font-size: 80px;
       line-height: 0;
       color: #161d20;
-      -webkit-align-self: center;
-          -ms-flex-item-align: center;
-              align-self: center; }
+      -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center; }
     .about-page .approach .row > div:first-of-type {
       -webkit-box-pack: center;
-      -webkit-justify-content: center;
           -ms-flex-pack: center;
               justify-content: center; }
   .about-page .approach .row .content {
@@ -650,11 +650,20 @@ hr {
     padding: 8px 18px;
     box-sizing: border-box;
     box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.03); }
+    .table > div.final-price,
+    .table > div.final-price + div {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      text-transform: uppercase;
+      color: #333;
+      font-size: 17px; }
   .table .end {
     background: #f5f6f7;
     margin-top: 10px;
     border-radius: 4px;
     width: 100%; }
+  .table h3 {
+    padding: 8px 18px; }
 
 .btn {
   padding: 10px 22px;

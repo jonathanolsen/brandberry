@@ -976,6 +976,15 @@ hr {
         padding: 8px 18px;
         box-sizing: border-box;
         box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.03);
+
+        &.final-price,
+        &.final-price + div {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-transform: uppercase;
+            color: #333;
+            font-size: 17px;
+        }
     }
 
     .end {
@@ -983,6 +992,10 @@ hr {
         margin-top: 10px;
         border-radius: 4px;
         width: 100%;
+    }
+
+    h3 {
+        padding: 8px 18px;
     }
 }
 
