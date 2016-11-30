@@ -645,7 +645,7 @@ hr {
 .table {
   width: 100%;
   display: inline-block;
-  margin-bottom: 30px; }
+  margin: 0 -15px 30px; }
   .table > div {
     width: 50%;
     float: left;
